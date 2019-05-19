@@ -31,8 +31,9 @@
                         </tr>
                         @endforeach 
                         <tr class="table-primary">
-                            <td colspan="6"></td>
+                            <td colspan="5"></td>
                             <td>{{ $total }}</td>
+                            <td><a class="btn btn-primary btn-sm" href='{{ url('order/create', $ticket->id) }}'>Order</a></td>
                         </tr>                        
                         </tbody>
                     </table>
